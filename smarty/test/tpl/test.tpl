@@ -1,3 +1,4 @@
+{include file="header.tpl" sitename="testsite"}
 {$articletitle}
 
 {$arr['articlecontent']['title']}
@@ -18,6 +19,12 @@ not bad
 bad
 {/if}
 
+{section name=article loop=$articlelist}
+    {$articlelist[article].title}
+    {$articlelist[article].author}
+    {$articlelist[article].content}
+<br/>
+{/section}
 
 
 
