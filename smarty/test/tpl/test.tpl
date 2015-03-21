@@ -8,3 +8,20 @@
 {$time|date_format:"%H:%M:%S"}
 {$emptya|default:"no title"}
 
+<br/>
+
+{if $score gt 90}
+nice
+{elseif $score gt 60}
+not bad
+{else}
+bad
+{/if}
+
+
+
+
+
+
+
+
